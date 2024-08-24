@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://wfq4ld51l8g6"]
+
+[ext_resource type="Script" path="res://Scripts/UI/Dialogue.gd" id="1_2shn4"]
+[ext_resource type="FontFile" uid="uid://g84ic4bsaiy8" path="res://Font/PixelifySans-VariableFont_wght.ttf" id="1_f3glr"]
+[ext_resource type="Texture2D" uid="uid://bcmdhbjtvdcfe" path="res://Art/DialogueArrow.png" id="2_855n5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dbvaj"]
+bg_color = Color(0.0196078, 0.0196078, 0.333333, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 12
+border_width_bottom = 1
+border_color = Color(0.258824, 0.258824, 0.258824, 1)
+
+[node name="Dialogue" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dbvaj")
+script = ExtResource("1_2shn4")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 145.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.658824, 0.658824, 0.858824, 1)
+theme_override_fonts/font = ExtResource("1_f3glr")
+theme_override_font_sizes/font_size = 10
+text = "This is text.
+Blah blah cool blah blahasdas"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 23.0
+offset_right = 157.0
+offset_bottom = 31.0
+texture = ExtResource("2_855n5")
+stretch_mode = 4

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg1m88q0311ti"]
+
+[ext_resource type="PackedScene" uid="uid://wfq4ld51l8g6" path="res://Prefabs/Dialogue.tscn" id="1_w0x22"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Dialogue" parent="." instance=ExtResource("1_w0x22")]
