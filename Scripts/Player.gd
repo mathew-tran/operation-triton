@@ -12,5 +12,6 @@ func _process(delta):
 		velocity.y = -Speed * delta
 	elif Input.is_action_pressed("down"):
 		velocity.y = Speed * delta
+	if Input.is_action_pressed("alternate_action"):
+		velocity *= 2
 	move_and_slide()
-	global_position = global_position.snapped(Vector2(2,2))

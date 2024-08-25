@@ -125,6 +125,7 @@ sources/3 = SubResource("TileSetAtlasSource_c5rny")
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+modulate = Color(0.733005, 0.733005, 0.733005, 1)
 tile_set = SubResource("TileSet_8wcns")
 format = 2
 layer_0/name = "Default"
